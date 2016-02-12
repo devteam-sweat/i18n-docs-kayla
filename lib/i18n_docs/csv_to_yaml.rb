@@ -41,7 +41,7 @@ module I18nDocs
     end
 
     def process_row(row_hash)
-      key = row_hash.delete('key')
+      key = row_hash.delete('json_id')
       return unless key
 
       key_elements = key.split('.')
